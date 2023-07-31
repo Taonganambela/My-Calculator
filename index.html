@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Body background color */
+    body {
+      background-color: #000000; /* Light gray color */
+    }
+
+    /* Container background color */
+    .container {
+      background-color: #000000; /* Gray color */
+    }
+
+    /* Calculator background color */
+    #calculator {
+      background-color: #000000; /* Dark gray color */
+    }
+
+    /* Calculator buttons background color */
+    .calculator-btn {
+      background-color: #000000; /* Gray-blue color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto my-4 max-w-md p-5 border border-green-400 rounded-lg shadow-md">
+    <div id="calculator" class="text-center">
+
+
+      <div class="mb-4">
+        <input type="text" id="display" class="w-full p-8 text-right text-lg bg-black border border-green-300 rounded-lg text-white" readonly>
+      </div>
+
+      <div class="flex flex-wrap gap-8 w-full justify-center">
+       
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">1</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">2</button>
+        <button class="w-1/4 bg-green-100 hover:bg-green-600 p-2 rounded-lg" onclick="handleClick(event)">-</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">3</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">4</button>
+        <button class="w-1/4 bg-green-100 hover:bg-green-600 p-2 rounded-lg" onclick="handleClick(event)">/</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">5</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">6</button>
+        <button class="w-1/4 bg-green-100 hover:bg-green-600 p-2 rounded-lg" onclick="handleClick(event)">*</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">7</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">8</button>
+        <button class="w-1/4 bg-green-100 hover:bg-green-600 p-2 rounded-lg" onclick="handleClick(event)">+</button>
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">9</button>
+              
+        <button class="w-1/4 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">0</button>
+        
+        <button class="w-1/4 bg-green-100 hover:bg-green-600 p-2 rounded-lg" onclick="handleClick(event)">√</button>
+
+        <button class="w-2/5 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">C</button>
+
+        <button class="w-2/5 bg-green-600 hover:bg-green-200 p-2 rounded-lg" onclick="handleClick(event)">=</button>
+
+      </div>
+      
+    </div>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html> 
+
